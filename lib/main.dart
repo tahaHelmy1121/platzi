@@ -6,10 +6,11 @@ import 'app/env.dart';
 import 'firebase_options.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  WidgetsFlutterBinding.ensureInitialized();
+
   await EnvVariable.instance.init(
       envType: EnvTypeEnum.development, envTypeEnum: EnvTypeEnum.development);
   runApp(AppPlatzi());
