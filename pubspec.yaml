@@ -94,7 +94,10 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/app_icon.jpg"
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -107,6 +110,7 @@ flutter:
   assets:
     - .env.dev
     - .env.prod
+    - assets/icons/app_icon.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
